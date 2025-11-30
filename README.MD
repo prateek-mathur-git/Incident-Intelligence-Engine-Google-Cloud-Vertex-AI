@@ -1,6 +1,6 @@
 # AI-Powered Incident Intelligence Engine (AIOps Mini Project)
 
-This project is an **AI-powered incident analysis and correlation engine** built on **Google Cloud Vertex AI (Gemini 1.5 Flash)** and **Python**.
+This project is an **AI-powered incident analysis and correlation engine** built on **Google Cloud Vertex AI (Gemini 2.0 Flash)** and **Python**.
 
 It takes raw incident / alert descriptions (synthetic production-like data), then:
 - Summarizes each incident using a large language model (LLM)
@@ -47,7 +47,7 @@ Each line contains:
 
 1. **Load incidents**  
    - Read JSONL from local or GCS.
-2. **LLM Enrichment (Gemini 1.5 Flash)**  
+2. **LLM Enrichment (Gemini 2.0 Flash)**  
    - For each incident:
      - Generate summary  
      - Extract keywords / attributes  
@@ -75,7 +75,7 @@ Each line contains:
 
 - **Language:** Python 3  
 - **Cloud:** Google Cloud Platform  
-- **AI Platform:** Vertex AI – Gemini 1.5 Flash  
+- **AI Platform:** Vertex AI – Gemini 2.0 Flash  
 - **Libraries:**
   - `google-cloud-aiplatform`
   - `scikit-learn` (TF-IDF + KMeans)
@@ -100,4 +100,5 @@ aiops-incident-intelligence/
 │   ├── rca_generation.py
 │   └── export_report.py
 ├── README.md
+
 └── requirements.txt
